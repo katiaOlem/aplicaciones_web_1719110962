@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Título de la página</title>
+		<style>
+		    #table1 {
+		        width: 100%;
+		    }
+		    #table1 thead{
+		        background-color: grey;
+		        color: white;
+		    }
+		    #table1 tbody{
+		        background-color: blue;
+		        color: white;
+		    }
+		    #table1 tfoot{
+		        background-color: green;
+		        color: white;
+		    }
+		    #table2 {
+		        width: 50%;
+		    }
+		</style>
+	</head>
+	<body>
+		
+		<h1>DOM - Document Object Model</h1>
+		
+		<table id="table1" border="1">
+		    <caption>título de la tabla</caption>
+		    <thead>
+		        <tr>
+		            <th>Números</th>
+		            <th>Valores</th>
+		        </tr>
+		    </thead>
+            <tbody>
+		        <tr>
+		            <td rowspan="3">&lt;html&gt;</td>
+		            <td>10</td>
+		        </tr>
+		        <tr>
+		            <td>5</td>
+		        </tr>
+		        <tr>
+		            <td>8</td>
+		        </tr>
+ 	        </tbody>
+		    <tfoot>
+		        <tr>
+		            <th colspan="2">Total: 3</th>
+		        </tr>
+		    </tfoot>
+		</table>
+		
+		<br>
+		<br>
+		
+		<table id="table2" border="1">
+		    <caption>título de la tabla</caption>
+		    <thead>
+		        <tr>
+		            <th>
+		                <p>Números</p>
+		                <p>Otro parrafo</p>
+		            </th>
+		            <th>Valores</th>
+		        </tr>
+		    </thead>
+            <tbody>
+		        <tr>
+		            <td rowspan="3">&lt;html&gt;</td>
+		            <td>10</td>
+		        </tr>
+		        <tr>
+		            <td>5</td>
+		        </tr>
+		        <tr>
+		            <td>8</td>
+		        </tr>
+ 	        </tbody>
+		    <tfoot>
+		        <tr>
+		            <th colspan="2">Total: 3</th>
+		        </tr>
+		    </tfoot>
+		</table>
+		
+	</body>
+</html>
