@@ -3,23 +3,89 @@
 	<head>
 		<title> FORMULARIO CSS FRAMEWORKS </title>
     <style>
-      h1 {
-        color:red;
-      }
-    </style>
+body {
+     background: -webkit-linear-gradient(lightblue,white,pink,purple);
+     color:black;
+}
+
+h1{
+  background: -webkit-linear-gradient(pink,lightblue);
+  color:purple;
+}
+ 
+</style>
 	</head>
 	<body>
 	    <center>
-	    <h1>Formularios CSS FRAMEWORKS</h1>
-	    
-	    <form method="get">
-	        <label>Nombre</label><br>
-	        <input name="nombre" type="text"><br>
-	        <label>Edad</label><br>
-	        <input name="edad" type="number" min="1"><br>
-	        <input type="submit" value="Enviar">
+	    <h1>FORMULARIO</h1>
       </center>
-	    </form>
-		
+      
+      <right>
+      <img src="https://www.infoem.org.mx/sites/default/files/inicio_infografia_002_pdp.png" width="15%" />
+      </right>
+
+      <center>
+      <fieldset>
+      <legend>DATOS</legend>
+      
+
+    <form action="#" target="" method="get" name="formDatosPersonales">
+
+
+  <label for="Matricula" />Matricula</label>
+	<input type="Matricula" name="Matricula" id="Matricula"  
+  min="20"  placeholder="#Ingresa tu Matricula Escolar" required /> 
+  <br>
+  <br>
+  
+	<label for="nombre">Nombre(s) </label>
+	<input type="text" name="nombre" id="nombre" placeholder="Ingresa tu Nombre (s) "/>
+
+	<label for="apellidos">Apellido Paterno</label>
+	<input type="text" name="apellidos" id="apellidos" placeholder="1r Apellido"/>
+
+  <label for="apellidos">Apellido Materno</label>
+	<input type="text" name="apellidos" id="apellidos" placeholder="2do Apellido"/>
+
+  <p>Edad: <input type="number" name="edad"></p>
+
+  <label for="Nacimiento">Fecha de Nacimiento:</label>
+      <input type="date" id="Nacimiento" name="Fecha de Nacimiento" value="2020-10-09"
+      min="1800-01-01" max="2025-12-31">
+
+  <p>Sexo:
+          
+            <input type="radio" name="hm" value="h" > Hombre
+            <input type="radio" name="hm" value="m"> Mujer
+            <input type="radio" name="o" value="o"> Otro
+            </p>
+  
+  <label for="Estado">Estado:</label>
+      <select name="Estado" id="Estado" required>
+                  <option value="A.C">Aguas Calientes</option>
+                   <option value="Baja">Baja California</option>
+                   <option value="Campeche">Campeche</option>
+                   <option value="Chihuahua">Chihuahua</option>
+                   <option value="D.F">Distrito Federal </option>
+                   <option value="México">México</option>
+                   <option value="Puebla">Puebla</option>
+                   <option value="Jalisco">Querétaro</option>
+                   <option value="Sonora">Sonora</option>
+                   </select>
+
+	
+  <br>
+  <br>
+  <br>
+	                <input style="border: #000 2px solid; background-color:pink" value="GUARDAR" name="button" type="submit">
+</form>
+</center>
+     
+  <br>
+  <br>
+  <h6 >Katia Itzel Melo Dominguez</h6>
+  
+
+	    	
 	</body>
 </html5>
