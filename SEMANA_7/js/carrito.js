@@ -1,15 +1,23 @@
 function insertar(){
   var cantidad= $("#cantidad_product").val();
-  var producto = $("#producto option:selected").text();
+  var nombreProducto = $("#producto option:selected").text();
   var precio=$("#producto").val();
   var carrito = $("#comment").val();
   var total=0;
   
-  if(cantidad<10 & cantidad >0 &  precio >0){
-    $("#comment").text(carrito +"La cantidad del producto es: "+ cantidad + "\tEl producto es: " +producto +  "\tPrecio:$" + precio + "\tEl total es de:$"+ parseFloat(cantidad)*parseFloat(precio)+"\n");
+  if(cantidad<10 & cantidad >0 &  precio >0)
+  {
+    $("#comment").text(carrito +"Cantidad: "
+    + cantidad + 
+    "\t ID & MARCA: " + nombreProducto +
+      "\tPrecio:MXN " + precio +
+       "\tTotal de su compra:MXN "+
+       parseFloat(cantidad)*parseFloat(precio)+"\n");
+
     llenaTotal(parseFloat(cantidad)* parseFloat(precio));
     $("#cantidad_product").val(" ")
     $("#producto").val("0")
+  
   }
   else if (cantidad <=0 & precio<=0 ){
     Swal.fire("Error","No has ingresado valores", 'error')
