@@ -55,6 +55,8 @@
        <div class="container">
           <form>
          <div class="btn btn-secondary dropdown-toggle">
+          <label for="cantidad">cantidad:</label>
+          <input type="number" class="form-control" id="cantidad_product" placeholder="Ingresa la cantidad" name="cantidad">
           <label for="sel1">productos:</label>
           <select class="form-control" id="producto" name="productos">
             <option value="0" selected>ID & MARCA</option>
@@ -69,11 +71,8 @@
             <option value="1855"> ID 8304059 NIKE </option>
           </select>
           <br>
-          <label for="cantidad">cantidad:</label>
-          <input type="number" class="form-control" id="cantidad_product" placeholder="Ingresa la cantidad" name="cantidad">
-          <br>
           <input type="button" id="insert" class="btn btn-success" onclick="insertar()"  value="Insertar"> 
-          <input type="button" id ="compra" class="btn btn-danger" onclick="limpiar()" value="Nueva compra"> 
+          <input type="button" id ="combrar" class="btn btn-danger" onclick="limpiar()" value="Nueva compra"> 
           <br>
           <br>      
           <h2>Compras</h2>
@@ -84,6 +83,8 @@
           <br>
           <label for="totalCompra">Total:</label>
           <input type="text" value="0" id="totalCompra" name="totalCompra" disabled>
+          <label for="totalCompra">Pagar:</label>
+          <input type="number" value="0" id="pago" name="pago" disabled>
         </div>
       </form>        
     </div>
